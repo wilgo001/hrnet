@@ -1,0 +1,51 @@
+.TablePlugin .global-container {
+
+}
+
+
+.TablePlugin i.arrow-left::before {
+    content: '\25C0';
+    font-style: normal;
+}
+
+.TablePlugin i.arrow-right::before {
+    content: '\25B6';
+    font-style: normal;
+}
+
+.TablePlugin .page-selection {
+    display: flex;
+}
+
+.TablePlugin .page-selection p {
+    padding: 0;
+    margin: 0;
+}
+
+.TablePlugin .header-cell {
+    position: relative;
+    padding: 5px 5px 5px 15px;
+    background-color: #888;
+    border: solid 2px black;
+}
+
+.TablePlugin .header-cell .arrow-up::before {
+    content: '\25B2';
+    font-style: normal;
+    position: absolute;
+    font-size: 12px;
+    left: 0;
+    top: 0;
+}
+.TablePlugin .header-cell .arrow-down::before {
+    content: '\25BC';
+    font-style: normal;
+    position: absolute;
+    font-size: 12px;
+    left: 0;
+    bottom: 0;
+}
+
+.TablePlugin .header-cell .selected-sort::before {
+    color: #444;
+}
