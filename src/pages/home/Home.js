@@ -1,7 +1,7 @@
 import { Header, Navigation } from "../../components";
 import useCreateModal from "../../plugins/modal/Modal";
 import Select from '../../plugins/select/Select';
-import DatePicker from "../../plugins/datePicker/DatePicker";
+import { DatePicker } from "@wilgo001/date-picker-library";
 import { useState } from "react";
 import { addEmployee } from "../../redux/employeeSlice";
 import { useDispatch } from "react-redux/es/exports";
