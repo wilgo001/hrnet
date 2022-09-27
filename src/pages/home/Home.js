@@ -149,7 +149,7 @@ const Home = () => {
         setEmployee(newEmployee);
     }
     return(
-        <div>
+        <div className="main">
             <Header title='HRnet' />
             <Navigation links={links} />
             <form onSubmit={(e) => {submit(e)}}>

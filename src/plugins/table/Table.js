@@ -14,8 +14,8 @@ const Table = (props) => {
     const [search, setSearch] = useState('');
 
     const getMaxPage = () => {
-        let maxPage = Math.floor(data.length / rowNbr);
-        let r = data.length % rowNbr;
+        let maxPage = Math.floor(filteredData.length / rowNbr);
+        let r = filteredData.length % rowNbr;
         if(r > 0){
             maxPage++;
         }
@@ -36,7 +36,6 @@ const Table = (props) => {
      * launch when the filter parameter change, to update the sorted data
      */
     useEffect(() => {
-        if(search === '') return;
         let list = data.filter((value) => {
             let datas = Object.values(value);
             let containFilter = false;
