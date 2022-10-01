@@ -1,7 +1,7 @@
 import { Header, Navigation } from "../../components";
 import useCreateModal from "../../plugins/modal/Modal";
 import Select from '../../plugins/select/Select';
-import { DatePicker } from "@wilgo001/date-picker-library";
+import { DatePicker } from 'date-picker-library';
 import { useState } from "react";
 import { addEmployee } from "../../redux/employeeSlice";
 import { useDispatch } from "react-redux/es/exports";
@@ -160,7 +160,7 @@ const Home = () => {
                 <input type='text' id={TYPE_NAMES.lastName} onChange={(e) => onChange(e.target.value, TYPE_NAMES.lastName)}/>
                 <label htmlFor={TYPE_NAMES.birthDate}>Date of birth</label>
                 <DatePicker id={TYPE_NAMES.birthDate} onChange={(value) => onChange(value, TYPE_NAMES.birthDate)}/>
-                <label htmlFor={TYPE_NAMES.startDate}>Date of birth</label>
+                <label htmlFor={TYPE_NAMES.startDate}>Date of start</label>
                 <DatePicker id={TYPE_NAMES.startDate} onChange={(value) => onChange(value, TYPE_NAMES.startDate)}/>
                 <fieldset>
                     <legend>Address</legend>
